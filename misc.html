@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlad's Mics</title>
+
+    <link rel="stylesheet" href="reset.css" media="all">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="print_General.css" media="print">
+
+    <script src="formsubmit.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Vlad's Mics.</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"><strong>Home</strong></a></li>
+            <li><a href="resume.html"><strong>Resume</strong></a></li>
+            <li><a href="contact.html"><strong>Contact</strong></a></li>
+            <li><a href="misc.html"><strong>Misc</strong></a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <section>
+            <article>
+                <div class="section-container">
+                    <p id="my-misc-page">Misc Page</p>
+                    <div class="section-line"></div>
+                </div>
+                <p style="text-align: center;"><strong>Welcome to my miscelanious page!</strong></p>
+            </article>
+        </section>
+    </main>
+
+    <footer id="whole-table">
+        <h3>My Table</h3>
+        <table style="border: 2px solid rgb(207, 149, 149)">
+            <caption style="color: black;"><strong>Custom Table</strong> </caption>
+            <colgroup>
+                <col span="2" style="background-color: rgb(178, 196, 202);">
+                <col span="2" style="background-color: rgb(178, 196, 202);">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th colspan="2" style="background-color: rgb(133, 84, 84); color: white;">First Table</th>
+                    <th colspan="2" style="background-color: rgb(133, 84, 84); color: white;">Second Table</th>
+                </tr>
+            </thead>
+
+            <tbody id="table">
+                <tr>
+                    <td>Cheesecake:</td>
+                    <td>10/10</td>
+
+                    <td>Cake:</td>
+                    <td>7/10</td>
+                </tr>
+                <tr>
+                    <td>Brownie:</td>
+                    <td>9/10</td>
+
+                    <td>Chocolate-chip Cookie:</td>
+                    <td>8/10</td>
+                </tr>
+                <tr>
+                    <td>Cupcake:</td>
+                    <td>11/10</td>
+
+                    <td>Candy:</td>
+                    <td>5/10</td>
+                </tr>
+            </tbody>
+        </table>
+    </footer>
+
+    <aside>
+        <h3 style="margin: 30px 5% 2px;">My Media</h3>
+    </aside>
+
+    <aside id="video">
+        <p>Click the play botton below</p>
+        <video controls>
+            <source src="Love-edit.mp4" type="audio/mp4">
+            <p><em>Update you browser!</em></p>
+        </video>
+    </aside>
+
+    <aside id="Linux">
+        <p>Click the play botton below</p>
+        <iframe width="200" 
+                height="200" 
+                src="https://www.youtube.com/embed/gd7BXuUQ91w?si=aXuQ7uAi19QuT6pW"
+                title="YouTube video player" 
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen></iframe>
+    </aside>
+
+    <aside id="audio">
+        <p>Click the play botton below</p>
+        <audio controls>
+            <source src="Love-melody.mp3" type="audio/mp3">
+        </audio>
+    </aside>
+
+
+    <section>
+        <h1 style="margin: 20px 20px 10px 5%;">Custom Survey</h1>
+
+        <form id="survey" action="https://bscacad4.buffalostate.edu/~nageles/form.php" method="post">
+
+            <fieldset id="custInfo">
+                <legend>Your Information</legend>
+
+                <div class="formRow">
+                    <label for="name">Name*</label>
+                    <input name="custName" id="name" type="text" placeholder="First and Last Name" required>
+                </div>
+
+                <div class="formRow">
+                    <label for="name">Street Address</label>
+                    <input name="custStreet" id="street" type="text" placeholder="First and Last Name" required>
+                </div>
+
+                <div class="formRow">
+                    <label for="name">City</label>
+                    <input name="custCity" id="city" type="text">
+                </div>
+
+                <div class="formRow">
+                    <label for="state">State</label>
+                    <input name="custState" id="state" type="text" list="stateData">
+                    <datalist id="stateData">
+                        <option value="Florida">Florida</option>
+                        <option value="Ohio">Ohio</option>
+                        <option value="Tennessee">Tennessee</option>
+                        <option value="Texas">Texas</option>
+                    </datalist>
+                </div>
+
+                <div class="formRow">
+                    <label for="name">Postal Code</label>
+                    <input name="custZip" id="custZip" type="text">
+                </div>
+
+                <div class="formRow">
+                    <label for="name">Phone Number</label>
+                    <input name="custPhone" id="phone" type="tel">
+                </div>
+
+                <div class="formRow">
+                    <label for="name">E-mail*</label>
+                    <input name="custEmail" id="mail" type="email" required>
+                </div>
+
+                <div class="formRow">
+                    <label for="dineOut">How many times a month do you bike?</label>
+                    <input name="dineOut" id="dineOut" type="number" min="0" max="100">
+                </div>
+
+                <input type="checkbox" name="mailMe" id="mailCB" value="1" checked>
+                <label for="mailCB">Please add me to your spammy email list</label>
+
+            </fieldset>
+
+            <fieldset id="expInfo">
+                <legend>Tell me More</legend>
+
+                <div class="formRow">
+                    <label for="visit">When did you visit this page?</label>
+                    <input name="visitDate" id="visit" type="date">
+                </div>
+
+                <div class="formRow">
+                    <label for="order">What did you do on this page?</label>
+                    <select name="orderType" id="order">
+                        <option value="carry">Looked at things</option>
+                        <option value="delivery">Wanted to know more about you</option>
+                        <option value="dinein">Was just passing by</option>
+                        <option value="takenbake">I dont even know myself</option>
+                    </select>
+                </div>
+
+                <div class="formRow">
+                    <label>Did you like my WebPage?</label>
+                    <fieldset class="optGroup">
+                        <label for="WebPage_yes">Yes</label>
+                        <input type="radio" name="WebPage" id="WebPage_yes" value="yes">
+                        <label for="WebPage_no">No</label>
+                        <input type="radio" name="WebPage" id="WebPage_no" value="no">
+                        <label for="WebPage_maybe">Maybe?</label>
+                        <input type="radio" name="WebPage" id="WebPage_maybe" value="maybe">
+                    </fieldset>
+                </div>
+
+                <div class="formRow">
+                    <label>Did you have a good day?</label>
+                    <fieldset class="optGroup">
+                        <label for="cYes">Yes</label>
+                        <input type="radio" name="oThink" id="cYes" value="yes">
+                        <label for="cNo">No</label>
+                        <input type="radio" name="oThink" id="cNo" value="no">
+                    </fieldset>
+                </div>
+
+                <div class="formRow">
+                    <label for="rangeBox">Give my WebPage a rating<br>
+                        (0=not good; 10=Very good!) </label>
+                    <input name="serviceRate" id="rangeBox" type="range" value="10" step="1" min="0" max="10">
+                </div>
+
+                <label for="commBox">Tell me more about yourself</label>
+                <textarea name="custExp" id="commBox"></textarea>
+
+            </fieldset>
+
+            <div id="buttons">
+                <input type="submit" value="Submit My Survey">
+                <input type="reset" value="Cancel"
+                    onClick="return confirm('Are you sure you want to reset this form?')">
+            </div>
+
+        </form>
+
+    </section>
+
+</body>
+
+</html>

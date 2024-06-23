@@ -1,0 +1,297 @@
+@charset "utf-8";
+@font-face {
+    font-family: Skranji;
+    src: url("Skranji-Regular.ttf") format("truetype");
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(90deg, rgb(88, 72, 16) 5%, rgb(39, 30, 17) 100%);
+    border: 3px solid rgba(2, 0, 36, 1);
+    text-align: center;
+    border-radius: 13px;
+    box-shadow: 10px 5px 5px rgb(44, 41, 41);
+}
+
+/* HTML and Body styles */
+body, html {
+    /* height: 100%; */
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: url(CIS2.jpg) center/cover rgb(138, 125, 125);
+}
+
+body {
+    /* color: rgb(184, 160, 160); */
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: rgb(209, 204, 204) 9px 0px 30px, rgb(209, 204, 204) -9px 0px 30px;
+    border-left: 2px solid rgb(51, 51, 51);
+    border-right: 2px solid rgb(51, 51, 51);
+}
+
+main {
+    background-color: transparent;
+    color: rgb(59, 110, 119);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px 5%;
+}
+
+/* First ul list in main */
+main > ul {
+    margin: 15px;
+    font-size: 20px;
+}
+
+/* Second ul list in main's aside */
+main > aside > ul {
+    margin: 15px;
+    font-size: 20px;
+}
+
+footer {
+    margin: 30px 5%;
+}
+
+/* Use a few styles on the CIS image in the index website after "Computer Information Systems" line */
+aside > img {
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin-top: 20px;
+
+    /* Adjust the rotation angle as needed */
+    /* transform: rotate(-4deg);  */
+}
+
+/* Making space between lines in the only way I know */
+aside {
+    margin-top: 40px;
+}
+
+/* Formatting the ul element with Names(links) to other web pages */
+body > nav > ul {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    padding: 20px;
+    background: linear-gradient(to bottom, black 78%, rgb(179, 20, 25));
+}
+
+a {
+    transition: color 0.08s ease-in 0.08s, font-size 0.3s ease, letter-spacing 0.3s ease-out, text-shadow 0.3s ease-in-out;
+}
+
+body > main > nav {
+    font-size: 16px;
+}
+
+body > footer {
+    color: rgba(153, 118, 57, 0.8);
+    font-size: 1.1em;
+    line-height: 1.2em;
+    top: 40px;
+}
+
+/* Style for the misc's page table */
+#whole-table {
+    color: rgba(170, 136, 78, 0.8);
+    font-size: 1.1em;
+    line-height: 1.2em;
+    top: 40px;
+}
+
+/* Changing the colors of links to other websites as well as articles */
+a:link, a:visited {
+    color: rgb(197, 28, 28);
+}
+
+a:hover, a:active {
+    color: rgb(192, 196, 214);
+}
+
+/* Headers */
+/* Changing the colors/size of h1,h2,h3... elements */
+
+h1 {
+    color: rgb(201, 148, 148);
+    font-size: 32px;
+}
+
+h2 {
+    text-align: left;
+}
+
+#my_resume_page {
+    text-align: center;
+}
+
+h2, h3, h4 {
+    color: rgb(10, 10, 10);
+    font-size: 21px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Skranji;
+}
+
+#my-misc-page {
+    color: rgb(10, 10, 10);
+    font-size: 21px;
+    font-family: Skranji;
+}
+
+/* Style the resume text elements, and their distance as well as align them */
+section#resume1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Set the distance above the text from the other text */
+#address, #college2, #college5 {
+    margin-top: 20px;
+}
+
+/* Make the table in mics page have space for all td-s */
+#table td {
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Styles for the table border lines in mics page */
+#table tr {
+    border: 1px solid black;
+}
+
+td:nth-child(2) {
+    border-right: 1px solid black;
+}
+
+/* Set up how the "strong" will work */
+strong {
+    font-weight: bold;
+}
+
+/* Making certain words black */
+#name, #address, #college1, #college2, #college3, #college4, #college5, #section-text {
+    color: black;
+}
+
+/* Set the color to black */
+.indented-text strong {
+    color: black;
+}
+
+#college1, #college2, #college3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Indent a text */
+.indented-text {
+    text-indent: 20px;
+    margin: 3px 0px 0px; /* Adjust margin as needed (top, right, bottom, left) */
+}
+
+/* Adjust the distance from the left of the left over text */
+.indented-text0 {
+    text-indent: 30px;
+}
+
+/* Making a line appear under text and headers*/
+.section-container {
+    text-align: center;
+    position: relative;
+    margin-bottom: 6px;
+}
+
+.section-text {
+    display: inline-block;
+    position: relative;
+    padding-right: 5px;
+}
+
+.section-line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid #000;
+}
+
+/* Make distance between the header names in the Resume page */
+#resume3, #resume4, #resume5, #resume6 {
+    margin-top: 40px;
+}
+
+
+/* Styles for the audio */
+#audio {
+    display: inline-block; /* Make it an inline block to only take necessary width */
+    width: 200px; /* Set a fixed width for the box */
+    color: rgb(43, 40, 40);
+    margin: 30px 15px 1px 15px; /* Adjust margin as needed (top, right, bottom, left) */
+    background-color: rgb(150, 112, 62);
+    box-shadow: 5px 5px 10px rgba(101, 101, 101, 0.4), -5px -5px 10px rgba(101, 101, 101, 0.4);
+    border-radius: 15px; /* Smaller border radius */
+    padding: 10px;
+    text-align: center; /* Center text */
+}
+
+#audio p {
+    margin-bottom: 10px; /* Add some space below the paragraph */
+}
+
+#audio audio {
+    width: 100%; /* Make the audio player fill the container */
+}
+
+
+/* Styles for the video */
+#video {
+    display: inline-block; /* Make it an inline block to only take necessary width */
+    width: 200px; /* Set a fixed width for the square */
+    color: rgb(212, 196, 196);
+    margin: 20px 15px 20px 5%; /* Adjust margin as needed */
+    background-color: rgb(150, 112, 62);
+    box-shadow: 5px 5px 10px rgba(101, 101, 101, 0.4), -5px -5px 10px rgba(101, 101, 101, 0.4);
+    border-radius: 15px; /* Smaller border radius */
+    padding: 10px;
+    text-align: center; /* Center text */
+}
+
+#Linux {
+    display: inline-block; /* Make it an inline block to only take necessary width */
+    width: 200px; /* Set a fixed width for the square */
+    color: rgb(212, 196, 196);
+    margin: 20px 15px 20px 15px; /* Adjust margin as needed */
+    background-color: rgb(150, 112, 62);
+    box-shadow: 5px 5px 10px rgba(101, 101, 101, 0.4), -5px -5px 10px rgba(101, 101, 101, 0.4);
+    border-radius: 15px; /* Smaller border radius */
+    padding: 10px; 
+    text-align: center; /* Center text */
+}
+
+#video p {
+    margin-bottom: 10px; /* Add some space below the paragraph */
+}
+
+#Linux p {
+    margin-bottom: 10px; /* Add some space below the paragraph */
+}
+
+#video video {
+    width: 100%; /* Make the video player fill the container */
+    border-radius: 10px; /* Adjust the border radius for the video */
+}
+
+#Linux video {
+    width: 100%; /* Make the video player fill the container */
+    border-radius: 10px; /* Adjust the border radius for the video */
+}
+
+#print_resume {
+    display: none;
+}

@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+nav {
+    display: none;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+head {
+    display: none;
+}
+
+body {
+    font-size: 18px;
+}
+
+
+.status-container {
+    margin-top: 100px;
+    display: flex;
+    margin: 5px 0px 0px 1.49%; /* Adjust margin as needed (top, right, bottom, left) */
+}
+.status-text {
+    /* font-weight: bold; */
+    padding-left: 4px; /* Distance between the circle and text */
+}
+
+.status-label {
+    color: black;
+}
+
+
