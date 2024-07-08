@@ -223,7 +223,7 @@ strong {
 
 /* Make distance between the header names in the Resume page */
 #resume3, #resume4, #resume5, #resume6 {
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
 
